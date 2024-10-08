@@ -1,4 +1,5 @@
 @echo off
-for /D %%k in (%1\*.*) do set /A k+=1
-echo The total number of subdirectories is %k%
-pause 
+set /A k = 0
+for /R%1 %%f IN (.) DO SET /A k = k + 1
+Echo number of subdirecorieses: %k%
+pause
