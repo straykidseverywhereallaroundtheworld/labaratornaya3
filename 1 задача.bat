@@ -1,3 +1,4 @@
-@echo off 
-dir *.bmp
-pause 
+@ECHO OFF
+set /P pac=enter pac:
+dir *.%pac%
+pause
