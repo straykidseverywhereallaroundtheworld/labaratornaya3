@@ -1,4 +1,5 @@
 @echo off
-setlocal
-xcopy Z:\1laba Z:\3laba 
-pause
+set /P xx1=enter papka
+set /P xx2=enter papka
+xcopy %xx1% %xx2% /S
+pause 
